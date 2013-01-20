@@ -66,7 +66,7 @@ class wechatCallbackapiTest
 
 			if(!empty( $keyword ))
 	                {
-        	      		$msgType = "text";
+        	      		$msgType = "news";
                 		// $contentStr = "Welcome to wechat world!";
 				$picTitle = "N for next";
 				$picDesc = "just reply N to see next";
