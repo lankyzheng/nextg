@@ -72,7 +72,7 @@ class wechatCallbackapiTest
 				$picDesc = "just reply N to see next";
 				$picUrl = "http://v2.wannacool.com/640.png";
 				$picClickUrl = "http://v2.wannacool.com/ntest.jpg";
-                		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr, $picTitle, $picDesc, $picUrl, $picClickUrl);
+                		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername, $time, $msgType, $picTitle, $picDesc, $picUrl, $picClickUrl);
                 		echo $resultStr;
                 	}else{
                 		echo "Input something...";
