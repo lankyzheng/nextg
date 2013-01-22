@@ -1,3 +1,4 @@
+<?php
 $picArr = array(
 	"12.png", 
 	"Newzoo_2011_Infograph_US.png", 
@@ -9,3 +10,4 @@ $picArr = array(
 	"africa-mobile-growth.png", 
 	"tripl-social-travel-infographic-640-1.png"
 );
+?>

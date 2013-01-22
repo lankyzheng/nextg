@@ -79,7 +79,7 @@ class wechatCallbackapiTest
 		*/
 				include 'picarray.php';
 
-				$picFile = $picArr[rand(0,8)];
+				$picFile = $picArr[rand(0,(count($picArr) - 1))];
         	      		$msgType = "news";
                 		// $contentStr = "Welcome to wechat world!";
 				$picTitle = $picFile;
