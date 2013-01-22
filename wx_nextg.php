@@ -77,7 +77,7 @@ class wechatCallbackapiTest
 					"africa-mobile-growth.png", 
 					"tripl-social-travel-infographic-640-1.png");
 
-				$picFile = $my_array[rand(0,8)];
+				$picFile = $picArr[rand(0,8)];
         	      		$msgType = "news";
                 		// $contentStr = "Welcome to wechat world!";
 				$picTitle = $picFile;
