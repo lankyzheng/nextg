@@ -77,13 +77,13 @@ class wechatCallbackapiTest
 					"africa-mobile-growth.png", 
 					"tripl-social-travel-infographic-640-1.png");
 
-				$picTitle = $my_array[rand(1,9)];
+				$picFile = $my_array[rand(0,8)];
         	      		$msgType = "news";
                 		// $contentStr = "Welcome to wechat world!";
-				$picTitle = "N for next";
+				$picTitle = $picFile;
 				$picDesc = "just reply N to see next";
-				$picUrl = "http://v2.wannacool.com/pics/".$picTitle;
-				$picClickUrl = "http://v2.wannacool.com/pics/".$picTitle;
+				$picUrl = "http://v2.wannacool.com/pics/".$picFile;
+				$picClickUrl = "http://v2.wannacool.com/pics/".$picFile;
                 		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername, $time, $msgType, $picTitle, $picDesc, $picUrl, $picClickUrl);
                 		echo $resultStr;
                 	}else{
