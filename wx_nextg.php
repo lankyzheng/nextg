@@ -66,12 +66,24 @@ class wechatCallbackapiTest
 
 			if(!empty( $keyword ))
 	                {
+				$picArr = array(
+					"12.png", 
+					"Newzoo_2011_Infograph_US.png", 
+					"infographic_banking.png", 
+					"23443102108110994.png", 
+					"The-Internet-of-Things.png", 
+					"martin.png", 
+					"7n6Y.png", 
+					"africa-mobile-growth.png", 
+					"tripl-social-travel-infographic-640-1.png");
+
+				$picTitle = $my_array[rand(1,9)];
         	      		$msgType = "news";
                 		// $contentStr = "Welcome to wechat world!";
 				$picTitle = "N for next";
 				$picDesc = "just reply N to see next";
-				$picUrl = "http://v2.wannacool.com/640.png";
-				$picClickUrl = "http://v2.wannacool.com/ntest.jpg";
+				$picUrl = "http://v2.wannacool.com/pics/".$picTitle;
+				$picClickUrl = "http://v2.wannacool.com/pics/".$picTitle;
                 		$resultStr = sprintf($newsTpl, $fromUsername, $toUsername, $time, $msgType, $picTitle, $picDesc, $picUrl, $picClickUrl);
                 		echo $resultStr;
                 	}else{
