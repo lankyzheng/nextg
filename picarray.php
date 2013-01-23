@@ -1,13 +1,17 @@
 <?php
 $picArr = array(
-	"12.png", 
-	"Newzoo_2011_Infograph_US.png", 
-	"infographic_banking.png", 
-	"23443102108110994.png", 
-	"The-Internet-of-Things.png", 
-	"martin.png", 
-	"7n6Y.png", 
-	"africa-mobile-growth.png", 
-	"tripl-social-travel-infographic-640-1.png"
+	"001.jpg", 
+	"002.jpg", 
+	"003.jpg", 
+	"004.jpg", 
+	"005.jpg", 
+	"006.jpg", 
+	"007.jpg", 
+	"008.jpg", 
+	"009.jpg", 
+	"010.jpg", 
+	"011.jpg", 
+	"012.jpg", 
+	"013.jpg" 
 );
 ?>

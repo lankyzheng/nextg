@@ -29,7 +29,7 @@ class wechatCallbackapi
 	public function responseMsg()
 	{
 		//get post data, May be due to the different environments
-		ß$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
+		$postStr = $GLOBALS["HTTP_RAW_POST_DATA"];
 
 		//extract post data
 		if (!empty($postStr))
@@ -41,7 +41,7 @@ class wechatCallbackapi
 			$time = time();
 
 			//if(!empty( $keyword ))
-			if(($keyword == “N”) or ($keyword == “n”))
+			if(($keyword == "N") or ($keyword == "n"))
 			{
 				$newsTpl = "<xml>
 					<ToUserName><![CDATA[%s]]></ToUserName>
