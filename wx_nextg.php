@@ -67,8 +67,8 @@ class wechatCallbackapi
 				$msgType = "news";
 				$picTitle = date("H:i");
 				$picDesc = "Hi, just reply N to see next!";
-				$picUrl = "http://v2.wannacool.com/pics/".$picFile;
-				$picClickUrl = "http://v2.wannacool.com/pics/".$picFile;
+				$picUrl = "http://wannacool.com/images/next/".$picFile;
+				$picClickUrl = "http://wannacool.com/images/next/".$picFile;
 				$resultStr = sprintf($newsTpl, $fromUsername, $toUsername, $time, $msgType, $picTitle, $picDesc, $picUrl, $picClickUrl);
 				echo $resultStr;
 
