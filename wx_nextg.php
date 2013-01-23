@@ -65,8 +65,8 @@ class wechatCallbackapi
 
 				$picFile = $picArr[rand(0,(count($picArr) - 1))];
 				$msgType = "news";
-				$picTitle = $picFile;
-				$picDesc = "just reply N to see next";
+				$picTitle = date("H:i");
+				$picDesc = "Dear ".$fromUsername.", just reply N to see next!";
 				$picUrl = "http://v2.wannacool.com/pics/".$picFile;
 				$picClickUrl = "http://v2.wannacool.com/pics/".$picFile;
 				$resultStr = sprintf($newsTpl, $fromUsername, $toUsername, $time, $msgType, $picTitle, $picDesc, $picUrl, $picClickUrl);
@@ -84,7 +84,7 @@ class wechatCallbackapi
 					</xml>";
 
 				$msgType = "text";
-				$contentStr = "Welcome to wechat world!";
+				$contentStr = "Welcome ".$fromUsername.", just reply N to see next!";
 				$resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);
 				echo $resultStr;
 
